@@ -1,8 +1,11 @@
-# Advantage Reminder for dnd5e
+# Advantage Reminder for dnd5e — unofficial V14 port
 
-![GitHub release (latest by date and asset)](https://img.shields.io/github/downloads/kaelad02/adv-reminder/latest/module.zip)
-[![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fadv-reminder&colorB=4aa94a)](https://forge-vtt.com/bazaar#package=adv-reminder)
-![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://github.com/kaelad02/adv-reminder/releases/latest/download/module.json)
+> [!IMPORTANT]
+> This is an **unofficial fork** of [Advantage Reminder](https://github.com/kaelad02/adv-reminder) by kaelad, ported to Foundry VTT V14 and dnd5e 6.
+> It is **not maintained or endorsed by the original author**, and it was developed **with AI assistance** (the original module is marked "Zero AI" on Foundry's package listing; this fork is not).
+> Please report problems with this port [here](https://github.com/digennarot/adv-reminder/issues), not on the original repository.
+>
+> The module id is `adv-reminder-v14`, so it installs separately from the original. Enable only one of the two at a time. Active Effect keys (`flags.adv-reminder.*`) and settings are unchanged, so existing effects keep working.
 
 The D&D 5e system lets you set Advantage or Disadvantage on some D20 Tests, but it doesn't always make it obvious when a roll should have it, or why. Advantage Reminder fills that gap:
 
@@ -11,7 +14,7 @@ The D&D 5e system lets you set Advantage or Disadvantage on some D20 Tests, but 
 - it lets Active Effects set Advantage, Disadvantage and Criticals on more rolls (attacks, for example) and in more situations (a saving throw against a status) than the system does on its own;
 - it shows your own reminder messages in the roll dialog, for the bonuses that are too situational to automate.
 
-[Full documentation on the wiki](https://github.com/kaelad02/adv-reminder/wiki)
+[Full documentation on the original wiki](https://github.com/kaelad02/adv-reminder/wiki) (written for the original module; the Active Effect keys are the same)
 
 ![Saving Throw screenshot with advantage](docs/screenshot1.png?raw=true)
 
@@ -22,14 +25,14 @@ The D&D 5e system lets you set Advantage or Disadvantage on some D20 Tests, but 
 | Foundry VTT | 14.367 | 14.369 |
 | D&D 5e system | 6.0.0 | 6.0.6 |
 
-Version 6.0.0 drops support for older Foundry and dnd5e versions. If you are still on Foundry V13, stay on the 5.x releases.
+This port requires Foundry V14. If you are still on Foundry V13, use the [original module](https://github.com/kaelad02/adv-reminder).
 
 ## Installation
 
 In Foundry, open **Add-on Modules → Install Module** and paste this manifest URL:
 
 ```text
-https://github.com/kaelad02/adv-reminder/releases/latest/download/module.json
+https://github.com/digennarot/adv-reminder/releases/latest/download/module.json
 ```
 
 ## Advantage, Disadvantage and Criticals

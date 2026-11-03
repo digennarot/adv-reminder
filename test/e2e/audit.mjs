@@ -18,7 +18,7 @@ try {
 
   await suite.check("the module is active and its condition effects are registered", () => {
     const ce = CONFIG.DND5E.conditionEffects;
-    return { ok: !!game.modules.get("adv-reminder")?.active && ce.advReminderGrantAdjacentAttack?.has("prone"), version: game.modules.get("adv-reminder").version };
+    return { ok: !!game.modules.get("adv-reminder-v14")?.active && ce.advReminderGrantAdjacentAttack?.has("prone"), version: game.modules.get("adv-reminder-v14").version };
   });
 
   await suite.check("save: message, source and advantage from a Midi flag", async () => {
@@ -94,7 +94,7 @@ try {
   });
 
   await suite.check("keybindings: the module's copy agrees with D20Roll.applyKeybindings", async () => {
-    const { default: CoreRollerHooks } = await import("/modules/adv-reminder/src/rollers/core.js");
+    const { default: CoreRollerHooks } = await import("/modules/adv-reminder-v14/src/rollers/core.js");
     const hooks = new CoreRollerHooks();
     const D20Roll = CONFIG.Dice.D20Roll;
     const mismatches = [];
@@ -182,7 +182,7 @@ try {
     const effects = Array.from({ length: 50 }, (_, i) => [{ key: keys[i % keys.length], value: keys[i % keys.length].includes("message") ? `msg ${i}` : "1" }]);
     const a = await __ar.actor("perf", effects);
     const [{ AbilitySaveMessage }, { AbilitySaveSource }, { AbilitySaveReminder }] = await Promise.all([
-      import("/modules/adv-reminder/src/messages.js"), import("/modules/adv-reminder/src/sources.js"), import("/modules/adv-reminder/src/reminders.js"),
+      import("/modules/adv-reminder-v14/src/messages.js"), import("/modules/adv-reminder-v14/src/sources.js"), import("/modules/adv-reminder-v14/src/reminders.js"),
     ]);
     const run = () => {
       new AbilitySaveMessage(a, "dex").addMessage({});

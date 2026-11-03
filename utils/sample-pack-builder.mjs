@@ -1,7 +1,7 @@
 /**
  * Development tool to rebuild the "AR Message Sample Items" compendium from the SRD.
  * Not part of the released module. Run it from the console of a world where the module folder is a git checkout:
- *   const { default: SamplePackBuilder } = await import("/modules/adv-reminder/utils/sample-pack-builder.mjs");
+ *   const { default: SamplePackBuilder } = await import("/modules/adv-reminder-v14/utils/sample-pack-builder.mjs");
  *   const builder = new SamplePackBuilder();
  *   await builder.clear();
  *   await builder.build();
@@ -65,7 +65,7 @@ export default class SamplePackBuilder {
   async _getPackData() {
     let data = {};
     try {
-      const res = await fetch("modules/adv-reminder/utils/sample-pack-data.json");
+      const res = await fetch("modules/adv-reminder-v14/utils/sample-pack-data.json");
       data = await res.json();
     } catch (err) {
       console.warn(`Failed to retrieve token map data: ${err.message}`);

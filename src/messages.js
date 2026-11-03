@@ -39,7 +39,7 @@ export async function renderDialogMessages({ messages = [], sources = [] }, roll
     ...source,
     labels: foundry.utils.cleanHTML(await enrich(source.labels, false)),
   })));
-  return foundry.applications.handlebars.renderTemplate("modules/adv-reminder/templates/roll-dialog-messages.hbs", {
+  return foundry.applications.handlebars.renderTemplate("modules/adv-reminder-v14/templates/roll-dialog-messages.hbs", {
     messages: enrichedMessages,
     sources: enrichedSources,
   });

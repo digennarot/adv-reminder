@@ -1,7 +1,8 @@
 {
-  "name": "adv-reminder",
-  "version": "6.0.2",
+  "name": "adv-reminder-v14",
+  "version": "6.1.0",
   "author": "kaelad",
+  "contributors": ["digennarot (V14 port)"],
   "description": "Get advantage reminders for lots of d20 rolls",
   "private": true,
   "type": "module",

@@ -1,3 +1,8 @@
+# 6.1.0
+
+- fork: this is now published as an unofficial, AI-assisted fork with its own module id `adv-reminder-v14` and title, so it is not confused with the original "Zero AI" module by kaelad; Active Effect keys and settings keep the `adv-reminder` namespace, so existing effects and preferences still work
+- docs: the README says the fork is unofficial and points installs and issues to this repository
+
 # 6.0.2
 
 - build: the release workflow can attach `module.json` and `module.zip` to the release (it lacked write permission and failed with a 403)

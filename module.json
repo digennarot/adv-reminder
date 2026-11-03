@@ -1,9 +1,12 @@
 {
-  "id": "adv-reminder",
-  "title": "Advantage Reminder for dnd5e",
-  "description": "Use active effects to remind you to roll with advantage, disadvantage, or show messages on the dialog for situational adv/dis or bonuses.",
-  "authors": [{ "name": "kaelad", "discord": "kaelad#1693" }],
-  "version": "6.0.2",
+  "id": "adv-reminder-v14",
+  "title": "Advantage Reminder for dnd5e (unofficial V14 port)",
+  "description": "Unofficial, AI-assisted fork of Advantage Reminder by kaelad, ported to Foundry V14. Not maintained or endorsed by the original author. Use active effects to remind you to roll with advantage, disadvantage, or show messages on the dialog for situational adv/dis or bonuses.",
+  "authors": [
+    { "name": "kaelad (original author)", "discord": "kaelad#1693" },
+    { "name": "digennarot (V14 port)", "url": "https://github.com/digennarot" }
+  ],
+  "version": "6.1.0",
   "compatibility": {
     "minimum": "14.367",
     "verified": "14.369"
